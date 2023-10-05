@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Asap, sans-serif;
 }
 
 body {
@@ -30,7 +31,6 @@ header > h1 {
     color: white;
     font-size: 46px;
     padding: 15px 20px;
-    font-family: Asap, sans-serif;
     position: relative;
 }
 
@@ -39,7 +39,6 @@ header > h1 {
     color: white;
     font-size: 14px;
     padding: 2px 10px;
-    font-family: Asap, sans-serif;
 }
 
 #user-label {
@@ -62,7 +61,6 @@ header > h1 {
 .result > p {
     text-align: center;
     font-weight: bold;
-    font-family: Asap, sans-serif;
 }
 
 
@@ -90,7 +88,6 @@ header > h1 {
 #action-message {
     text-align: center;
     color: white;
-    font-family: Asap, sans-serif;
     font-weight: bold;
     font-size: 20px;
     margin-top: 20px;
