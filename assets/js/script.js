@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const computerScore = document.getElementById("computer-score");
     const actionMessage = document.getElementById("action-message");
 
-    let userScore = 0;
-    let computerScore = 0;
+    let userScoreNum = 0;
+    let computerScoreNum = 0;
 
     function startGame() {
         choices.forEach ((choice) => {
@@ -39,6 +39,21 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
+        function updateScore(userChoice, computerChoice, result) {
+            if (
+                (result === "Rock beats Scissors. You win!") ||
+                (result === "Scissors beats Paper. You win!") ||
+                (result === "Paper beats Rock You. win!") 
+                ) {
+                userScoreNum++;
+            } else if (
+                (result === "Rock loses to Paper. You lose!") ||
+                (result === "Paper loses to Scissors. You lose!") ||
+                (result === "Scissors loses to Rock. You lose!")      
+                ) {
+                computerScoreNum++;    
+                }
+        }
     
     }
 
