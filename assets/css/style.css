@@ -8,11 +8,11 @@
 }
 
 body {
-    background-color: #292C34;
+    background-color: #2a662f;
 }
 
 header {
-    background: white;
+    background: #df620e;
     padding: 20px;
 }
 
@@ -21,6 +21,33 @@ header>h1 {
     text-align: center;
     font-family: Asap, sans-serif;
 }
+
+
+.container {
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 600px;
+}
+
+.score-board {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    height: 40%;
+    border-radius: 8px;
+    border: 8px solid white;
+}
+
+/**
 
 .score-board {
     border: 3px solid white;
@@ -34,13 +61,25 @@ header>h1 {
     position: relative;
 }
 
+**/
+
 .badge {
-    background: #E2584D;
+    background: #df620e;
     color: white;
-    font-size: 14px;
-    padding: 2px 10px;
+    font-size: 20px;
+    padding: 20px 30px;
+    border-radius: 25px;
+    margin-bottom: 20px;
 }
 
+.user-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/**
 #user-label {
     position: absolute;
     top: 30px;
@@ -52,10 +91,12 @@ header>h1 {
     top: 30px;
     right: -25px;
 }
+**/
 
 .rules {
-    font-size: 40px;
+    font-size: 25px;
     color: white;
+    margin-top: 2rem;
 }
 
 .rules>p {
@@ -71,7 +112,7 @@ header>h1 {
 
 .choice {
     display: inline-block;
-    border: 4px solid #E2584D;
+    border: 4px solid #df620e;
     border-radius: 50%;
     padding: 10px;
     margin: 0 20px;
@@ -81,7 +122,7 @@ header>h1 {
 
 .choice:hover {
     cursor: pointer;
-    background: #663b60;
+    background: #909220;
 }
 
 
