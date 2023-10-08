@@ -3,23 +3,28 @@ document.addEventListener("DOMContentLoaded", function () {
     const userScore = document.getElementById("user-score");
     const computerScore = document.getElementById("computer-score");
     const actionMessage = document.getElementById("action-message");
+    const resultMessage = document.querySelector('.result');
+
 
     let userScoreNum = 0;
     let computerScoreNum = 0;
 
+
+    // Function to determine the Computers choice.
     function getComputerChoice() {
         const choices = ["rock", "paper", "scissors"];
         const randNum = Math.floor(Math.random() * 3);
         return choices[randNum];
     }
 
+    // Function to see which player wins the game. 
     function whoWins(userChoice, computerChoice) {
         if (userChoice === computerChoice) {
             return `${userChoice} equals ${computerChoice}. It's a draw!`;
         } else if (
-            (userChoice === "Rock" && computerChoice === "Scissors") ||
-            (userChoice === "Scissors" && computerChoice === "Paper") ||
-            (userChoice === "Paper" && computerChoice === "Rock")
+            (userChoice === "rock" && computerChoice === "scissors") ||
+            (userChoice === "scissors" && computerChoice === "paper") ||
+            (userChoice === "paper" && computerChoice === "rock")
 
         ) {
             return `${userChoice} beats ${computerChoice}. You win!`;
@@ -28,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    //Function to update and display the score of the game. 
     function updateScore(userChoice, computerChoice, result) {
         if (
             result.includes("You win!")
@@ -41,9 +47,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
         userScore.textContent = userScoreNum;
         computerScore.textContent = computerScoreNum;
+        result.textContent = result;
         actionMessage.textContent = `${userChoice} vs ${computerChoice}. ${result}`;
     }
 
+    // Event listener for the players choices.
     function startGame() {
         choices.forEach((choice) => {
             choice.addEventListener("click", function () {
@@ -55,6 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    //Starts the game.
     startGame();
 
 });
