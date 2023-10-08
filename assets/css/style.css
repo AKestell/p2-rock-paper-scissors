@@ -53,12 +53,12 @@ header>h1 {
     right: -25px;
 }
 
-.result {
+.rules {
     font-size: 40px;
     color: white;
 }
 
-.result>p {
+.rules>p {
     text-align: center;
     font-weight: bold;
 }
