@@ -148,3 +148,60 @@ header>h1 {
     color: white;
     font-weight: bold;
 }
+
+
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 100%;
+        height: 50%;
+        top: 450px;
+    }
+
+    .choices {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+
+    header>h1 {
+        font-size: 24px;
+    }
+
+    .container {
+        width: 90%;
+        height: 50%;
+    }
+
+    .score-board {
+        width: 80%;
+    }
+
+    .badge {
+        font-size: 16px;
+        padding: 15px 20px;
+    }
+
+    .rules {
+        font-size: 18px;
+    }
+
+    .choice {
+        padding: 8px;
+        margin: 0 10px;
+    }
+
+    #action-message {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    #user-score,
+    #conputer-score {
+        font-size: 40px;
+    }
+}
