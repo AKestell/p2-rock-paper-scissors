@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const userScore = document.getElementById("user-score");
   const computerScore = document.getElementById("computer-score");
   const actionMessage = document.getElementById("action-message");
-  const resultMessage = document.querySelector(".result");
 
   let userScoreNum = 0;
   let computerScoreNum = 0;

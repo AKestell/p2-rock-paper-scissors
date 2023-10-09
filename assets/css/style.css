@@ -61,19 +61,6 @@ header>h1 {
     align-items: center;
 }
 
-/**
-#user-label {
-    position: absolute;
-    top: 30px;
-    left: -25px;
-}
-
-#computer-label {
-    position: absolute;
-    top: 30px;
-    right: -25px;
-}
-**/
 
 .rules {
     font-size: 25px;
