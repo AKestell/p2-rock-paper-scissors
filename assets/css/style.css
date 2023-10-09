@@ -198,13 +198,13 @@ header>h1 {
     }
 
     .choices>.choice {
-        height: 100px;
-        width: 100px;
+        height: 60px;
+        width: 60px;
     }
 
     .choice>img {
-        height: 80px;
-        width: 80px;
+        height: 40px;
+        width: 40px;
     }
 
     .container {
