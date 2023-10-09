@@ -24,7 +24,7 @@ header>h1 {
 
 .container {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%);
     display: flex;
@@ -45,22 +45,6 @@ header>h1 {
     border-radius: 8px;
     border: 8px solid white;
 }
-
-/**
-
-.score-board {
-    border: 3px solid white;
-    border-radius: 4px;
-    text-align: center;
-    width: 200px;
-    margin: 20px auto;
-    color: white;
-    font-size: 46px;
-    padding: 15px 20px;
-    position: relative;
-}
-
-**/
 
 .badge {
     background: #df620e;
@@ -154,11 +138,11 @@ header>h1 {
     .container {
         width: 100%;
         height: 50%;
-        top: 450px;
+        top: 500px;
     }
 
     .choices {
-        width: 90%;
+        width: 100%;
     }
 }
 
@@ -175,6 +159,7 @@ header>h1 {
     .container {
         width: 90%;
         height: 50%;
+        top: 50%;
     }
 
     .score-board {
@@ -203,5 +188,13 @@ header>h1 {
     #user-score,
     #conputer-score {
         font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .container {
+        width: 100%;
+        height: 50%;
+        top: 50%;
     }
 }
