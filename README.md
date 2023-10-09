@@ -25,6 +25,7 @@ This website is curently live and the link to view it can be found here [HERE!](
   - [Features](#features)
     - [Future Features](#future-features)
   - [Testing](#testing)
+    - [Bugs](#bugs)
     - [Validator Testing](#validator-testing)
   - [Technologies Used](#technologies-used)
     - [Main languages used](#main-languages-used)
@@ -62,7 +63,7 @@ To try ans best the computer and score higher in Rock Paper Scissors.
 
 I decided to be a bit patriotic and give thego with the color scheme close to the Irish Tricolor.as they are very complimentary.
 
-[Colour palette for the game](assets/images-readme/colour-palette.PNG)
+![Colour palette for the game](assets/images-readme/colour-palette.PNG)
 
 Colour palette was generated from the [Coolors website](https://coolors.co/2a662f-ffffff-df620e-909220-353b3c) 
 
@@ -86,11 +87,11 @@ A Rock Paper Scissors game that is built on one page and is divided into 4 secti
   
 ![Image showing the rules fo the game](assets/images-readme/rules.PNG)
 
-- Image showing the selection buttons for the game.
+- Image showing the Rock, Paper and Scissor buttons for the game. When the buttons are pressed, the javascript code will assign a random selction to the computer and the scoreboard will update and award the winner a point. The outcome of the selction is also displayed under the buttons.  
 
 ![Image of the buttons](assets/images-readme/buttons.PNG)
 
-- The scoreboard at the bottom of the page
+- The scoreboard at the bottom of the page that updates both the User and Computer Score as selections are made. 
 
 ![Screenshot of the scoreboard](assets/images-readme/scoreboard.PNG)
 
@@ -100,6 +101,13 @@ Add a timer to the bottom of the page to give the player a timeframe to make a m
 
 ## Testing
 
+### Bugs
+I ran into a couple of bugs as I was working through the project that had me stumped for a bit.
+
+- One issue I had with the game was that no matter what the outcome of the game was it stated that the 'User' lost and only updated the 'Comp' score. The issues I had was when defining the 3 choices I used all lowercase letters but when I tried to call them in the 'whoWins' function, I had put capital letters at the start of each of them. A small error that took too much time to resolve!
+
+- One other issue I had was around the responsive of the site, specifically the scoreboard section. 
+  
 
 ### Validator Testing
 
